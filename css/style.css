@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.up-menu{
+    padding: 20px;
+    background-color: #1f1f56;
+}
+
+.up-menu a{
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    font-family: "Arial";
+    align-items: center;
+}
+
+.up-menu a:hover{
+    color: #fd8300;  
+}
+
+.up-menu ul{
+    column-gap: 22px;
+}
+
+.header{
+    align-items: center;
+}
+
+.header-contacts{
+    padding: 30px 0px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.contacts a{
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.mail a{
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.mail a{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.order{
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(../img/Rectangle\ 9.png);
+    text-align: center;
+}
+
+.img img{
+    width: 100%;
+}
+
+.img h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.img span{
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.img p{
+    padding-top: 12px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.img b{
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.center{
+    padding: 0 120px 46px;
+}
+
+.about-company h1{
+    padding: 28px 0px;
+    font-size: 30px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.about-company p{
+    max-width: 677px;
+    max-height: 193px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+    padding-bottom: 25px;
+}
+
+.about-company a{
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.projects h1{
+    display: block;
+}
+
+.projects h2{
+    padding-bottom: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.figcaption h3{
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.figcaption h3:hover{
+    text-decoration: underline;
+}
+
+.figcaption p{
+    max-height: 53px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    column-gap: 10px;
+}   
+
+.menu{
+    padding-top: 30px;
+    padding-right: 120px;
+}
+
+.menu h3{
+    padding: 17px;
+    border-radius: 3px;
+    background-color: #1f1f56;
+    color:#fff;
+  }
+
+  .submenu{
+    display:none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+  }
+  
+  .submenu a{
+    background-color:#e4e4ec;
+  }
+  
+  .menu a:hover{
+    background-color: #fd8300;
+  }
+
+  .submenu a:hover{
+    background-color: #cecedd;
+  }
+  
+  .menu li:hover > .submenu{
+    display: block;
+  }
+  
+  
+  .menu a{
+    display: block;
+    padding: 17px;
+    box-shadow: inset 0px -1px 0px #cecedd;
+    font-size: 14px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+    background-color: #e4e4ec;
+  }
+  
+  .down-menu{
+    padding: 42px 145px 29px 119px;
+    background-color: #ededf5;
+    align-items: center;
+    column-gap: 144px;
+  }
+
+  .left p,
+  .right p{
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+    font-family: "Arial";
+  }
+
+  .left ul p:hover,
+  .right ul p:hover{
+    color: #fd8300;
+    text-decoration: underline;
+  }
+
+  .company{
+    background-color: #dcdce6;
+  }
+
+  .company p{
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    text-align: center;
+    padding: 15px 0px 18px;
+  }
+
