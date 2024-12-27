@@ -1,6 +1,40 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Medium.woff') format('woff'),
+        url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: #fff;
 }
 
 
@@ -10,6 +44,12 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+hr{
+    width: 713px;
+    height: 1px;
+    background-color: #e4e4ec;
 }
 
 .wrapper{
@@ -23,8 +63,13 @@ a{
 }
 
 .up-menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     padding: 20px;
     background-color: #1f1f56;
+    z-index: 1;
 }
 
 .up-menu a{
@@ -36,6 +81,14 @@ a{
     align-items: center;
 }
 
+.social-networks svg {
+    fill: #fff;
+}
+
+.social-networks li:hover > svg {
+    fill: #fd8300;
+}
+
 .up-menu a:hover{
     color: #fd8300;  
 }
@@ -45,11 +98,14 @@ a{
 }
 
 .header{
+    background-color: #fff;
+    padding-top: 55px;
     align-items: center;
 }
 
 .header-contacts{
     padding: 30px 0px;
+    align-items: center;
 }
 
 .logo img{
@@ -64,21 +120,46 @@ a{
     font-family: "Arial";
 }
 
+.phone svg {
+    fill: #1f1f56;
+}
+
+.phone:hover > svg{
+    fill: #fd8300;
+}
+
+/* 
+.phone-number a::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+} */
+
 .mail a{
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
     font-family: "Arial";
-}
-
-.mail a{
     display: flex;
     align-items: center;
     column-gap: 12px;
 }
 
+.mail span{
+    text-decoration: underline;
+}
+
+.mail svg{
+    fill: #1f1f56;
+}
+
+.mail:hover > svg {
+    fill: #fd8300;
+}
+
 .order{
-    width: 200px;
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
@@ -87,6 +168,8 @@ a{
     background-color: #ffffff;
     border-radius: 25px;
     border: 2px solid #fd8300;
+    width: 200px;
+    height: 51px;
     justify-content: center;
     align-items: center;
 }
@@ -137,10 +220,6 @@ a{
     font-family: "Arial";
 }
 
-.center{
-    padding: 0 120px 46px;
-}
-
 .about-company h1{
     padding: 28px 0px;
     font-size: 30px;
@@ -163,16 +242,13 @@ a{
 .about-company a{
     font-size: 14px;
     line-height: 24px;
-    text-decoration: underline;
-    color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
 }
 
-.about-company hr{
-    width: 713px;
-    height: 1px;
-    background-color: #e4e4ec;
+.about-company a:hover{
+    text-decoration: underline;
+    color: #fd8300;
 }
 
 .projects h2{
@@ -204,12 +280,15 @@ a{
     color: #9999a6;
     font-family: "Arial";
     column-gap: 10px;
-}   
+} 
+
+.aside-menu{
+    position: sticky;
+    top: 60px;
+}
 
 .menu{
     min-width: 220px;
-    padding-top: 30px;
-    padding-right: 120px;
 }
 
 .menu h3{
@@ -242,8 +321,30 @@ a{
   .menu li:hover > .submenu{
     display: block;
   }
-  
-  
+
+  .menu > li > a{
+    position: relative;
+  }
+
+  .menu > li > a:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #666666;
+    border-left: 2px solid #666666;
+    transform: translateY(-50%) rotate(135deg);
+    transition: all is ease;
+  }
+
+  .menu > li:hover > a:before {
+    color: #ffffff;
+    border-color: #fff;
+    transform: translateY(-50%) rotate(225deg);
+  }
+
   .menu a{
     display: block;
     padding: 17px;
