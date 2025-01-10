@@ -159,14 +159,14 @@ hr{
     transition: all 0.5s ease;
 }
 
-
+/* 
 .phone-number a::after{
     content: "";
     position: absolute;
     width: 1px;
     height: 51px;
     background-color: #e4e4ec;
-} 
+}  */
 
 .mail a{
     font-size: 16px;
