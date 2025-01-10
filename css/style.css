@@ -38,6 +38,9 @@ body{
     font-family: "Arial";
 }
 
+img{
+    width: 100%;
+}
 
 ul{
     list-style: none;
@@ -70,7 +73,7 @@ hr{
     width: 100%;
     top: 0;
     left: 0;
-    padding: 20px;
+    padding: 15px;
     background-color: #1f1f56;
     z-index: 1;
 }
@@ -89,10 +92,12 @@ hr{
 
 .social-networks li:hover > a svg {
     fill: #fd8300;
+    transition: all 0.5s ease;
 }
 
 .up-menu a:hover{
     color: #fd8300;  
+    transition: all 0.5s ease;
 }
 
 .up-menu ul{
@@ -151,16 +156,17 @@ hr{
 
 .phone:hover > svg{
     fill: #fd8300;
+    transition: all 0.5s ease;
 }
 
-/* 
+
 .phone-number a::after{
     content: "";
     position: absolute;
     width: 1px;
     height: 51px;
     background-color: #e4e4ec;
-} */
+} 
 
 .mail a{
     font-size: 16px;
@@ -182,28 +188,33 @@ hr{
 
 .mail:hover > svg {
     fill: #fd8300;
+    transition: all 0.5s ease;
 }
 
 
 .skype:hover > svg {
     fill: #fd8300;
+    transition: all 0.5s ease;
 }
 
 .skype:hover > svg {
     fill: #fd8300;
+    transition: all 0.5s ease;
+}
+
+.order a{
+    color: #1f1f56;
 }
 
 .order{
     font-size: 16px;
     line-height: 24px;
-    color: #25252c;
     font-weight: bold;
     font-family: "Arial";
     background-color: #ffffff;
     border-radius: 25px;
     border: 2px solid #fd8300;
-    width: 200px;
-    height: 51px;
+    padding: 15px 30px;
     justify-content: center;
     align-items: center;
 }
@@ -254,9 +265,6 @@ hr{
     font-family: "Arial";
 }
 
-.center-left{
-    padding-bottom: 46px;
-}
 
 .about-company h1{
     padding: 28px 0px;
@@ -289,6 +297,9 @@ hr{
     text-decoration: underline;
 }
 
+.center-left{
+    padding-bottom: 46px;
+}
 .projects h2{
     padding-top: 30px;
     padding-bottom: 24px;
@@ -305,10 +316,12 @@ hr{
     color: #1f1f56;
     font-weight: bold;
     font-family: "Arial";
+    column-gap: 10px;
 }
 
 .figcaption h3:hover{
     text-decoration: underline;
+    transition: all 0.5s ease;
 }
 
 .figcaption p{
@@ -334,12 +347,8 @@ aside {
     overflow: hidden;
 }
 
-.menu li {
-    border-radius: 0px 0px 3px 3px;
-    overflow: hidden;
-}
-
 .menu{
+    font-family: "Arial";
     min-width: 220px;
 }
 
@@ -365,14 +374,17 @@ aside {
   .menu a:hover{
     background-color: #fd8300;
     color: #fff;
+    transition: all 0.5s ease;
   }
 
   .submenu a:hover{
     background-color: #cecedd;
+    transition: all 0.5s ease;
   }
   
   .menu li:hover > .submenu{
     display: block;
+    transition: all 0.5s ease;
   }
 
   .menu > li > a{
@@ -396,6 +408,7 @@ aside {
     color: #ffffff;
     border-color: #fff;
     transform: translateY(-50%) rotate(225deg);
+    transition: all 0.5s ease;
   }
 
   .menu a{
@@ -410,19 +423,12 @@ aside {
   }
   
   .down-menu{
-    padding: 42px 145px 29px 119px;
     background-color: #ededf5;
     column-gap: 144px;
     align-items: start;
+    justify-content: space-between;
   }
 
-  .down-left{
-    column-gap: 144px;
-  }
-
-  .down-right{
-    column-gap: 90px;
-  }
 
   .left p,
   .right p{
@@ -451,3 +457,111 @@ aside {
     padding: 15px 0px 18px;
   }
 
+
+  .price h2{
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    padding-bottom: 22px;
+}
+
+.price p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+table{
+    margin-bottom: 27px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+th{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #1f1f56;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+  }
+  
+  tbody>tr{
+    width: 960px;
+    height: 41px;
+    box-shadow: inset 0px -1px 0px #cecedd;
+    background-color: #e4e4ec;
+  }
+  
+  td{
+    padding: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5){
+    justify-content: center;
+    align-items: center;
+}
+
+tr:hover,
+td:hover{
+    background-color: #fd8300;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+
+.price span p:last-child{
+    padding-bottom: 27px;
+}
+
+.price a{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.price a:hover{
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+span > hr {
+    border: 0;
+    border-top: 1px;
+    width: 960px;
+    height: 1px;
+    background-color: #e4e4ec;
+}
+
+figcaption{
+    position: relative;
+  }
+
+  figcaption a {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  img{
+    transition: all 1s ease;
+  }
+
+  a:hover ~ picture > img{
+    transform: scale(1.1);
+  }
