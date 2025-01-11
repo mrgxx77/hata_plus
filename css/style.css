@@ -490,7 +490,10 @@ aside {
 table{
     margin-bottom: 27px;
     width: 100%;
-    border-radius +: 3px;
+}
+
+table+{
+    border-radius: 3px;
 }
 
 th{
