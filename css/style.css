@@ -147,7 +147,6 @@ hr{
     line-height: 24px;
     color: #25252c;
     font-weight: bold;
-    font-family: "Arial";
 }
 
 .phone svg {
@@ -172,7 +171,6 @@ hr{
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
-    font-family: "Arial";
     display: flex;
     align-items: center;
     column-gap: 12px;
@@ -210,7 +208,6 @@ hr{
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
-    font-family: "Arial";
     background-color: #ffffff;
     border-radius: 25px;
     border: 2px solid #fd8300;
@@ -244,7 +241,6 @@ hr{
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
-    font-family: "Arial";
     text-align: center;
 }
 
@@ -254,7 +250,6 @@ hr{
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
-    font-family: "Arial";
 }
 
 .img b{
@@ -262,7 +257,6 @@ hr{
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
-    font-family: "Arial";
 }
 
 
@@ -281,7 +275,6 @@ hr{
     font-size: 14px;
     line-height: 24px;
     color: #666666;
-    font-family: "Arial";
     padding-bottom: 25px;
 }
 
@@ -290,7 +283,6 @@ hr{
     line-height: 24px;
     font-weight: bold;
     color: #fd8300;
-    font-family: "Arial";
 }
 
 .about-company a:hover{
@@ -315,7 +307,6 @@ hr{
     line-height: 24px;
     color: #1f1f56;
     font-weight: bold;
-    font-family: "Arial";
     column-gap: 10px;
 }
 
@@ -329,7 +320,6 @@ hr{
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
-    font-family: "Arial";
     column-gap: 10px;
 } 
 
@@ -348,7 +338,6 @@ aside {
 }
 
 .menu{
-    font-family: "Arial";
     min-width: 220px;
 }
 
@@ -364,7 +353,6 @@ aside {
     font-size: 14px;
     line-height: 24px;
     color: #666666;
-    font-family: "Arial";
   }
   
   .submenu a{
@@ -418,24 +406,38 @@ aside {
     font-size: 14px;
     line-height: 24px;
     color: #25252c;
-    font-family: "Arial";
     background-color: #e4e4ec;
+  }
+
+  footer{
+    background-color: #ededf5;
   }
   
   .down-menu{
-    background-color: #ededf5;
-    column-gap: 144px;
     align-items: start;
     justify-content: space-between;
+    align-items: center;
   }
 
+  .down-left{
+    column-gap: 145px;
+    align-items: center;
+  }
+
+  .down-right{
+    column-gap: 90px;
+  }
+
+.left{
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
 
   .left p,
   .right p{
     font-size: 14px;
     line-height: 26px;
     color: #666666;
-    font-family: "Arial";
   }
 
   .left ul p:hover,
@@ -452,13 +454,17 @@ aside {
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
-    font-family: "Arial";
     text-align: center;
     padding: 15px 0px 18px;
   }
 
 
-  .price h2{
+
+
+
+
+
+  .price h1{
     font-size: 24px;
     line-height: 24px;
     color: #24242b;
@@ -471,7 +477,14 @@ aside {
     font-size: 14px;
     line-height: 24px;
     color: #666666;
-    font-family: "Arial";
+}
+
+.price span p:last-child{
+    padding-bottom: 25px;
+}
+
+.price a{
+    margin-bottom: 33px;
 }
 
 table{
@@ -503,7 +516,6 @@ th{
     font-size: 14px;
     line-height: 24px;
     color: #666666;
-    font-family: "Arial";
 }
 
 td:nth-child(2),
@@ -550,7 +562,7 @@ figcaption{
   }
 
   figcaption a {
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -565,3 +577,54 @@ figcaption{
   a:hover ~ picture > img{
     transform: scale(1.1);
   }
+
+  a:hover ~ h3{
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+
+
+  
+
+
+.contacts h1{
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    padding-top: 40px;
+    padding-bottom: 27px;
+}
+
+.contacts h3{
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    padding-bottom: 19px;
+}
+
+.contacts p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+    padding-bottom: 14px;
+}
+
+.phone {
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+}
+
+.contacts span>a {
+    color: #25252c;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+}
