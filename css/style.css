@@ -58,6 +58,11 @@ hr{
     background-color: #e4e4ec;
 }
 
+.header{
+    /* width: 1200px; */
+    /* height: 115px; */
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
+    background-color: #ffffff;}
 .wrapper{
     margin: 0 auto;
     max-width: 960px;
@@ -202,9 +207,6 @@ hr{
 
 .order a{
     color: #1f1f56;
-}
-
-.order{
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
@@ -292,6 +294,7 @@ hr{
 .center-left{
     padding-bottom: 46px;
 }
+
 .projects h2{
     padding-top: 30px;
     padding-bottom: 24px;
@@ -471,6 +474,7 @@ aside {
     font-weight: 700;
     font-family: "Roboto Slab";
     padding-bottom: 22px;
+    padding-top: 40px;
 }
 
 .price p{
@@ -483,14 +487,10 @@ aside {
     padding-bottom: 25px;
 }
 
-.price a{
-    margin-bottom: 33px;
-}
-
 table{
     margin-bottom: 27px;
     width: 100%;
-    border-radius: 3px;
+    border-radius +: 3px;
 }
 
 th{
@@ -502,6 +502,7 @@ th{
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
+    border-collabs: collabs;
   }
   
   tbody>tr{
@@ -533,6 +534,10 @@ td:hover{
     transition: all 0.5s ease;
   }
 
+.price{
+    padding-bottom: 33px;
+}
+
 .price span p:last-child{
     padding-bottom: 27px;
 }
@@ -542,6 +547,7 @@ td:hover{
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
+    margin-bottom: 33px;
 }
 
 .price a:hover{
@@ -555,6 +561,20 @@ span > hr {
     width: 960px;
     height: 1px;
     background-color: #e4e4ec;
+}
+
+.projects-two{
+    min-width: 960px;
+}
+
+.projects-two h2{
+    padding-top: 30px;
+    padding-bottom: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 figcaption{
