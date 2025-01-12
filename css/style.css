@@ -7,7 +7,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Roboto Slab';
     src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
@@ -17,7 +16,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Roboto Slab';
     src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
@@ -27,29 +25,23 @@
     font-style: normal;
     font-display: swap;
 }
-
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
     background-color: #fff;
     font-family: "Arial";
 }
-
 img{
     width: 100%;
 }
-
 ul{
     list-style: none;
 }
-
 a{
     text-decoration: none;
 }
-
 hr{
     border: 0;
     border-top: 1px;
@@ -57,7 +49,6 @@ hr{
     height: 1px;
     background-color: #e4e4ec;
 }
-
 .header{
     /* width: 1200px; */
     /* height: 115px; */
@@ -67,12 +58,10 @@ hr{
     margin: 0 auto;
     max-width: 960px;
 }
-
 .flex-between{
     display: flex;
     justify-content: space-between;
 }
-
 .up-menu{
     position: fixed;
     width: 100%;
@@ -82,7 +71,6 @@ hr{
     background-color: #1f1f56;
     z-index: 1;
 }
-
 .up-menu a{
     font-size: 14px;
     letter-spacing: 2px;
@@ -90,31 +78,25 @@ hr{
     color: #b1b1d2;
     align-items: center;
 }
-
 .social-networks svg{ 
     fill: #fff;
 }
-
 .social-networks li:hover > a svg {
     fill: #fd8300;
     transition: all 0.5s ease;
 }
-
 .up-menu a:hover{
     color: #fd8300;  
     transition: all 0.5s ease;
 }
-
 .up-menu ul{
     column-gap: 22px;
 }
-
 .phone,
 .mail,
 .skype {
     position: relative;
 }
-
 .phone svg,
 .mail svg,
 .skype svg {
@@ -122,7 +104,6 @@ hr{
     /* top: 32px; */
     left: -30px;
 }
-
 .phone::before,
 .mail::before,
 .skype::before{
@@ -131,38 +112,31 @@ hr{
     top: 32px;
     left: -320px;
 }
-
 .header{
     background-color: #fff;
     padding-top: 55px;
     align-items: center;
 }
-
 .header-contacts{
     padding: 30px 0px;
     align-items: center;
 }
-
 .logo img{
     width: 100%;
 }
-
 .phone-number a{
     font-size: 18px;
     line-height: 24px;
     color: #25252c;
     font-weight: bold;
 }
-
 .phone svg {
     fill: #1f1f56;
 }
-
 .phone:hover > svg{
     fill: #fd8300;
     transition: all 0.5s ease;
 }
-
 /* 
 .phone-number a::after{
     content: "";
@@ -171,7 +145,6 @@ hr{
     height: 51px;
     background-color: #e4e4ec;
 }  */
-
 .mail a{
     font-size: 16px;
     line-height: 24px;
@@ -180,31 +153,24 @@ hr{
     align-items: center;
     column-gap: 12px;
 }
-
 .mail span{
     text-decoration: underline;
 }
-
 .mail svg{
     fill: #1f1f56;
 }
-
 .mail:hover > svg {
     fill: #fd8300;
     transition: all 0.5s ease;
 }
-
-
 .skype:hover > svg {
     fill: #fd8300;
     transition: all 0.5s ease;
 }
-
 .skype:hover > svg {
     fill: #fd8300;
     transition: all 0.5s ease;
 }
-
 .order a{
     color: #1f1f56;
     font-size: 16px;
@@ -217,18 +183,15 @@ hr{
     justify-content: center;
     align-items: center;
 }
-
 .img{
     padding-top: 40px;
     padding-bottom: 40px;
     background-image: url(../img/Rectangle\ 9.png);
     text-align: center;
 }
-
 .img img{
     width: 100%;
 }
-
 .img h2{
     font-size: 30px;
     letter-spacing: 2px;
@@ -238,14 +201,12 @@ hr{
     font-weight: 700;
     font-family: "Roboto Slab";
 }
-
 .img span{
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
     text-align: center;
 }
-
 .img p{
     padding-top: 12px;
     font-size: 24px;
@@ -253,15 +214,12 @@ hr{
     color: #fd8300;
     font-weight: bold;
 }
-
 .img b{
     font-size: 40px;
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
 }
-
-
 .about-company h1{
     padding: 28px 0px;
     font-size: 30px;
@@ -270,7 +228,6 @@ hr{
     font-weight: 700;
     font-family: "Roboto Slab";
 }
-
 .about-company p{
     max-width: 677px;
     max-height: 193px;
@@ -279,22 +236,18 @@ hr{
     color: #666666;
     padding-bottom: 25px;
 }
-
 .about-company a{
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
     color: #fd8300;
 }
-
 .about-company a:hover{
     text-decoration: underline;
 }
-
 .center-left{
     padding-bottom: 46px;
 }
-
 .projects h2{
     padding-top: 30px;
     padding-bottom: 24px;
@@ -304,7 +257,6 @@ hr{
     font-weight: 700;
     font-family: "Roboto Slab";
 }
-
 .figcaption h3{
     font-size: 14px;
     line-height: 24px;
@@ -312,12 +264,10 @@ hr{
     font-weight: bold;
     column-gap: 10px;
 }
-
 .figcaption h3:hover{
     text-decoration: underline;
     transition: all 0.5s ease;
 }
-
 .figcaption p{
     max-height: 53px;
     font-size: 13px;
@@ -325,63 +275,51 @@ hr{
     color: #9999a6;
     column-gap: 10px;
 } 
-
 aside {
     padding-top: 36px;
 }
-
 .aside-menu{
     position: sticky;
     top: 60px;
 }
-
 .menu li:last-child{
     border-radius: 0px 0px 3px 3px;
     overflow: hidden;
 }
-
 .menu{
     min-width: 220px;
 }
-
 .menu h3{
     padding: 17px;
     border-radius: 3px 3px 0px 0px;
     background-color: #1f1f56;
     color:#fff;
   }
-
   .submenu{
     display:none;
     font-size: 14px;
     line-height: 24px;
     color: #666666;
   }
-  
   .submenu a{
     background-color:#e4e4ec;
   }
-  
   .menu a:hover{
     background-color: #fd8300;
     color: #fff;
     transition: all 0.5s ease;
   }
-
   .submenu a:hover{
     background-color: #cecedd;
     transition: all 0.5s ease;
   }
-  
   .menu li:hover > .submenu{
     display: block;
     transition: all 0.5s ease;
   }
-
   .menu > li > a{
     position: relative;
   }
-
   .menu > li > a:before{
     content: "";
     position: absolute;
@@ -394,14 +332,12 @@ aside {
     transform: translateY(-50%) rotate(135deg);
     transition: all is ease;
   }
-
   .menu > li:hover > a:before {
     color: #ffffff;
     border-color: #fff;
     transform: translateY(-50%) rotate(225deg);
     transition: all 0.5s ease;
   }
-
   .menu a{
     display: block;
     padding: 17px;
@@ -411,48 +347,39 @@ aside {
     color: #25252c;
     background-color: #e4e4ec;
   }
-
   footer{
     background-color: #ededf5;
   }
-  
   .down-menu{
     align-items: start;
     justify-content: space-between;
     align-items: center;
   }
-
   .down-left{
     column-gap: 145px;
     align-items: center;
   }
-
   .down-right{
     column-gap: 90px;
   }
-
 .left{
     padding-bottom: 30px;
     padding-top: 40px;
 }
-
   .left p,
   .right p{
     font-size: 14px;
     line-height: 26px;
     color: #666666;
   }
-
   .left ul p:hover,
   .right ul p:hover{
     color: #fd8300;
     text-decoration: underline;
   }
-
   .company{
     background-color: #dcdce6;
   }
-
   .company p{
     font-size: 13px;
     line-height: 18px;
@@ -476,26 +403,21 @@ aside {
     padding-bottom: 22px;
     padding-top: 40px;
 }
-
 .price p{
     font-size: 14px;
     line-height: 24px;
     color: #666666;
 }
-
 .price span p:last-child{
     padding-bottom: 25px;
 }
-
 table{
     margin-bottom: 27px;
     width: 100%;
 }
-
 table+{
     border-radius: 3px;
 }
-
 th{
     padding: 10px;
     border-radius: 3px;
@@ -507,21 +429,20 @@ th{
     font-family: "Roboto Slab";
     border-collabs: collabs;
   }
-  
+
   tbody>tr{
     width: 960px;
     height: 41px;
     box-shadow: inset 0px -1px 0px #cecedd;
     background-color: #e4e4ec;
   }
-  
+
   td{
     padding: 15px;
     font-size: 14px;
     line-height: 24px;
     color: #666666;
 }
-
 td:nth-child(2),
 td:nth-child(3),
 td:nth-child(4),
@@ -529,22 +450,18 @@ td:nth-child(5){
     justify-content: center;
     align-items: center;
 }
-
 tr:hover,
 td:hover{
     background-color: #fd8300;
     color: #fff;
     transition: all 0.5s ease;
   }
-
 .price{
     padding-bottom: 33px;
 }
-
 .price span p:last-child{
     padding-bottom: 27px;
 }
-
 .price a{
     font-size: 14px;
     line-height: 24px;
@@ -552,12 +469,10 @@ td:hover{
     font-weight: bold;
     margin-bottom: 33px;
 }
-
 .price a:hover{
     text-decoration: underline;
     transition: all 0.5s ease;
 }
-
 span > hr {
     border: 0;
     border-top: 1px;
@@ -565,11 +480,9 @@ span > hr {
     height: 1px;
     background-color: #e4e4ec;
 }
-
 .projects-two{
     min-width: 960px;
 }
-
 .projects-two h2{
     padding-top: 30px;
     padding-bottom: 24px;
@@ -579,11 +492,9 @@ span > hr {
     font-weight: 700;
     font-family: "Roboto Slab";
 }
-
 figcaption{
     position: relative;
   }
-
   figcaption a {
     position: absolute;
     top: 0;
@@ -592,15 +503,12 @@ figcaption{
     height: 100%;
     z-index: 1;
   }
-
   img{
     transition: all 1s ease;
   }
-
   a:hover ~ picture > img{
     transform: scale(1.1);
   }
-
   a:hover ~ h3{
     transform: scale(1.1);
     transition: all 1s ease;
@@ -620,7 +528,6 @@ figcaption{
     padding-top: 40px;
     padding-bottom: 27px;
 }
-
 .contacts h3{
     font-size: 14px;
     line-height: 24px;
@@ -629,7 +536,6 @@ figcaption{
     font-family: "Roboto Slab";
     padding-bottom: 19px;
 }
-
 .contacts p{
     font-size: 14px;
     line-height: 21px;
@@ -637,14 +543,12 @@ figcaption{
     font-family: "Arial";
     padding-bottom: 14px;
 }
-
 .phone {
     font-size: 18px;
     line-height: 24px;
     color: #25252c;
     font-weight: bold;
 }
-
 .contacts span>a {
     color: #25252c;
     font-size: 16px;
