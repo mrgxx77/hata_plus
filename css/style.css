@@ -394,6 +394,48 @@ aside {
 
 
 
+.sectors li,
+.houses li{
+    position: relative;
+}
+.dog-houses,
+.houses{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 120px;
+    background-color: #e4e4ec;
+}
+.dog-houses{
+    top: 0;
+    left: calc(100% + 4px);
+}
+/* .houses li:hover{
+    background-color: #fd8300;
+    color: #fff;
+} */
+.houses li{
+    padding: 15px 0px;
+}
+.houses,
+.dog-houses{
+    list-style: none;
+    display:none; 
+}
+
+
+.sectors li:hover > .dog-houses,
+.houses li:hover > .dog-houses{
+    display: block;
+} 
+.dog-houses::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 4px solid transparent;
+    height: 100%;
+}
   .price h1{
     font-size: 24px;
     line-height: 24px;
@@ -414,9 +456,13 @@ aside {
 table{
     margin-bottom: 27px;
     width: 100%;
+    border-collapse: collapse;
+    background-color: #e4e4ec;
 }
 table+{
     border-radius: 3px;
+}
+tr{
 }
 th{
     padding: 10px;
@@ -427,7 +473,6 @@ th{
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
-    border-collabs: collabs;
   }
 
   tbody>tr{
@@ -435,8 +480,7 @@ th{
     height: 41px;
     box-shadow: inset 0px -1px 0px #cecedd;
     background-color: #e4e4ec;
-  }
-
+    }  
   td{
     padding: 15px;
     font-size: 14px;
