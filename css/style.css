@@ -50,10 +50,9 @@ hr{
     background-color: #e4e4ec;
 }
 .header{
-    /* width: 1200px; */
-    /* height: 115px; */
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
-    background-color: #ffffff;}
+    background-color: #ffffff;
+}
 .wrapper{
     margin: 0 auto;
     max-width: 960px;
@@ -67,7 +66,7 @@ hr{
     width: 100%;
     top: 0;
     left: 0;
-    padding: 15px;
+    padding: 15px 0px;
     background-color: #1f1f56;
     z-index: 1;
 }
@@ -393,7 +392,18 @@ aside {
 
 
 
-
+.houses a{
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #25252c;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+.houses li{
+    padding: 8px 0px;
+    border-radius: 3px;
+}
 .sectors li,
 .houses li{
     position: relative;
@@ -403,19 +413,18 @@ aside {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 120px;
+    min-width: 140px;
     background-color: #e4e4ec;
 }
 .dog-houses{
     top: 0;
     left: calc(100% + 4px);
 }
-/* .houses li:hover{
-    background-color: #fd8300;
+.houses a:hover{
     color: #fff;
-} */
-.houses li{
-    padding: 15px 0px;
+}
+.houses li:hover{
+    background-color: #fd8300;
 }
 .houses,
 .dog-houses{
@@ -424,7 +433,7 @@ aside {
 }
 
 
-.sectors li:hover > .dog-houses,
+.sectors li:hover > .houses,
 .houses li:hover > .dog-houses{
     display: block;
 } 
@@ -436,6 +445,32 @@ aside {
     border-left: 4px solid transparent;
     height: 100%;
 }
+
+
+.houses > li > a{
+    position: relative;
+  }
+  .houses > li > a:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #666666;
+    border-left: 2px solid #666666;
+    transform: translateY(-50%) rotate(135deg);
+    transition: all is ease;
+  }
+  .houses > li:hover > a:before {
+    color: #fff;
+    border-color: #fff;
+    transform: translateY(-50%) rotate(225deg);
+    transition: all 0.5s ease;
+  } 
+
+
+
   .price h1{
     font-size: 24px;
     line-height: 24px;
@@ -454,19 +489,14 @@ aside {
     padding-bottom: 25px;
 }
 table{
+    border-radius: 3px;
     margin-bottom: 27px;
     width: 100%;
     border-collapse: collapse;
     background-color: #e4e4ec;
 }
-table+{
-    border-radius: 3px;
-}
-tr{
-}
 th{
     padding: 10px;
-    border-radius: 3px;
     background-color: #1f1f56;
     font-size: 14px;
     line-height: 24px;
@@ -474,7 +504,6 @@ th{
     font-weight: 700;
     font-family: "Roboto Slab";
   }
-
   tbody>tr{
     width: 960px;
     height: 41px;
