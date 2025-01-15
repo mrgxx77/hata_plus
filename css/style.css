@@ -534,7 +534,8 @@ th{
     line-height: 24px;
     color: #666666;
     align-items: center;
-}
+    box-shadow: inset 1px 0px 0px #cecedd;
+}   
  td:first-child{
     text-align: left;
 }
@@ -544,8 +545,7 @@ td:last-child{
 td+td:not(:last-child){
     text-align: center;
 }
-tr:hover
-{
+tr:hover{
     background-color: #fd8300;
     transition: all 0.5s ease;
   }
