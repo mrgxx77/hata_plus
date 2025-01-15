@@ -522,12 +522,20 @@ th{
     font-weight: 700;
     font-family: "Roboto Slab";
   }
-  tbody>tr{
-    box-shadow: inset 0px 1px 0px #cecedd;
+thead tr+tr{
+    border:  1px solid #274569;
+  }
+thead th{
+    box-shadow: inset 1px 0px 0px #274569;
+}
+tbody>tr{
     width: 960px;
     height: 41px;
     background-color: #e4e4ec;
-    }  
+}  
+tbody>tr+tr{
+    box-shadow: inset 0px 1px 0px #cecedd;
+}
   td{
     padding: 15px;
     font-size: 14px;
