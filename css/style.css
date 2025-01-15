@@ -66,9 +66,11 @@ hr{
     width: 100%;
     top: 0;
     left: 0;
-    padding: 15px 0px;
     background-color: #1f1f56;
     z-index: 1;
+}
+.up-menu li{
+    padding: 15px 0px;
 }
 .up-menu a{
     font-size: 14px;
@@ -84,7 +86,7 @@ hr{
     fill: #fd8300;
     transition: all 0.5s ease;
 }
-.up-menu a:hover{
+.up-menu li:hover > a{
     color: #fd8300;  
     transition: all 0.5s ease;
 }
@@ -124,6 +126,7 @@ hr{
     width: 100%;
 }
 .phone-number a{
+    padding-right: 30px;
     font-size: 18px;
     line-height: 24px;
     color: #25252c;
@@ -136,14 +139,13 @@ hr{
     fill: #fd8300;
     transition: all 0.5s ease;
 }
-/* 
-.phone-number a::after{
+.phone-number span::after{
     content: "";
     position: absolute;
     width: 1px;
     height: 51px;
     background-color: #e4e4ec;
-}  */
+}
 .mail a{
     font-size: 16px;
     line-height: 24px;
@@ -181,6 +183,10 @@ hr{
     padding: 15px 30px;
     justify-content: center;
     align-items: center;
+}
+.order a:hover{
+    color: #fd8300;
+    transition: all 0.5s ease;
 }
 .img{
     padding-top: 40px;
@@ -347,23 +353,25 @@ aside {
     background-color: #e4e4ec;
   }
   footer{
+    align-items: flex-start;
+    justify-content: start;
     background-color: #ededf5;
   }
   .down-menu{
+    padding-top: 40px;
     align-items: start;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   .down-left{
     column-gap: 145px;
-    align-items: center;
   }
   .down-right{
     column-gap: 90px;
+    align-items: flex-start;
   }
 .left{
     padding-bottom: 30px;
-    padding-top: 40px;
 }
   .left p,
   .right p{
@@ -392,6 +400,10 @@ aside {
 
 
 
+  
+.houses li:hover > a{
+    color: #fff;
+}
 .houses a{
     font-size: 12px;
     letter-spacing: 2px;
@@ -402,26 +414,37 @@ aside {
 }
 .houses li{
     padding: 8px 0px;
-    border-radius: 3px;
+    box-shadow: inset 0px 1px 0px #cecedd;
 }
 .sectors li,
 .houses li{
+    border-radius: 3px 3px 0px 0px;
     position: relative;
+}
+.sectors li:last-child,
+.houses li:last-child{
+    border-radius: 0px 0px 3px 3px;
 }
 .dog-houses,
 .houses{
     position: absolute;
-    top: 100%;
+    top: calc(100% + 5px);
     left: 0;
     min-width: 140px;
+    border-radius: 3px;
     background-color: #e4e4ec;
+}
+.houses::before{
+    content: "";
+    position: absolute;
+    border-top: 5px solid transparent;
+    width: 100%;
+    top: -5px;
+    left: 0;
 }
 .dog-houses{
     top: 0;
     left: calc(100% + 4px);
-}
-.houses a:hover{
-    color: #fff;
 }
 .houses li:hover{
     background-color: #fd8300;
@@ -431,8 +454,6 @@ aside {
     list-style: none;
     display:none; 
 }
-
-
 .sectors li:hover > .houses,
 .houses li:hover > .dog-houses{
     display: block;
@@ -441,12 +462,10 @@ aside {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: -4px;
     border-left: 4px solid transparent;
     height: 100%;
 }
-
-
 .houses > li > a{
     position: relative;
   }
@@ -469,8 +488,6 @@ aside {
     transition: all 0.5s ease;
   } 
 
-
-
   .price h1{
     font-size: 24px;
     line-height: 24px;
@@ -489,11 +506,12 @@ aside {
     padding-bottom: 25px;
 }
 table{
-    border-radius: 3px;
     margin-bottom: 27px;
     width: 100%;
     border-collapse: collapse;
     background-color: #e4e4ec;
+    border-radius: 3px;
+    overflow: hidden;
 }
 th{
     padding: 10px;
@@ -505,9 +523,9 @@ th{
     font-family: "Roboto Slab";
   }
   tbody>tr{
+    box-shadow: inset 0px 1px 0px #cecedd;
     width: 960px;
     height: 41px;
-    box-shadow: inset 0px -1px 0px #cecedd;
     background-color: #e4e4ec;
     }  
   td{
@@ -515,20 +533,25 @@ th{
     font-size: 14px;
     line-height: 24px;
     color: #666666;
-}
-td:nth-child(2),
-td:nth-child(3),
-td:nth-child(4),
-td:nth-child(5){
-    justify-content: center;
     align-items: center;
 }
-tr:hover,
-td:hover{
+ td:first-child{
+    text-align: left;
+}
+td:last-child{
+    text-align: right;
+}
+td+td:not(:last-child){
+    text-align: center;
+}
+tr:hover
+{
     background-color: #fd8300;
-    color: #fff;
     transition: all 0.5s ease;
   }
+tr:hover > td{
+    color: #fff;
+}
 .price{
     padding-bottom: 33px;
 }
