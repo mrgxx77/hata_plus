@@ -622,8 +622,14 @@ figcaption{
 
   
 
-
-.contacts h1{
+.ocd{
+    justify-content: start;
+    column-gap: 88px;
+}
+.contacts-ocd{
+    padding-bottom: 33px;
+}
+.contacts-ocd h1{
     font-size: 24px;
     line-height: 24px;
     color: #24242b;
@@ -632,21 +638,30 @@ figcaption{
     padding-top: 40px;
     padding-bottom: 27px;
 }
-.contacts h3{
+.contacts-ocd h3{
     font-size: 14px;
     line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding-bottom: 19px;
+    padding-bottom: 12px;
 }
-.contacts p{
+.contacts-ocd p{
     font-size: 14px;
     line-height: 21px;
     color: #666666;
-    font-family: "Arial";
-    padding-bottom: 14px;
+    padding-bottom: 7px;
 }
+.mail-two{
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+}
+.Consultation{
+    margin-right: 74px;
+}
+
 .phone {
     font-size: 18px;
     line-height: 24px;
@@ -654,15 +669,17 @@ figcaption{
     font-weight: bold;
 }
 .map{
+    overflow: hidden;
     position: relative;
-    width: 466px;
-    height: 300px;
+    min-width: 466px;
+    min-height: 400px;
 }
 iframe{
-    position: absolute;
-    /* top: -80px; */
-    width: 100%;
     height: 100%;
+    position: absolute;
+    top: -71px;
+    width: 100%;
+    border: none;
 }
 .contacts span>a {
     color: #25252c;
@@ -677,51 +694,54 @@ iframe{
 .mff{
     padding-top: 35px;
     padding-bottom: 40px;
+    width: 100%;
 }
 
-i input{
-    width: 198px;
-    height: 40px;
+.mff h2{
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    padding-bottom: 10px;
+}
+.feedback-form{
+    width: 50% ;
+}
+input{ 
+    border: 1px solid #c5c5d4;
+    width: 100%;    
+    box-sizing: border-box;
     padding: 0px 15px;
     border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #c5c5d4;
-    font-size: 13px;
-    line-height: 21px;
+}
+::placeholder{
     color: #9999a6;
     font-style: italic;
+}
+label input{
+    font-size: 13px;
+    line-height: 21px;
     margin-bottom: 10px;
   }
   
   .text input{
-    width: 436px;
-    height: 40px;
-    padding: 0px 15px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #c5c5d4;
     font-size: 13px;
     line-height: 21px;
-    color: #9999a6;
-    font-style: italic;
     margin-bottom: 10px;
   }
   
   textarea{
-    width: 436px;
+    width: 100%;    
+    max-width: 467px;
     max-height: 75px;
     padding: 15px;
     min-height: 105px;
-    border-radius: 3px;
-    background-color: #ffffff;
     border: 1px solid #c5c5d4;
     font-size: 13px;
     line-height: 21px;
-    color: #9999a6;
-    font-style: italic;
     font-family: "Arial";
     margin-bottom: 10px;
-
   }
   
   input[type=checkbox]{
@@ -729,8 +749,6 @@ i input{
     width: 15px;
     height: 15px;
     border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #c5c5d4;
   }
   
   .check{
@@ -742,7 +760,7 @@ i input{
   }
   
   input:checked + span{
-    top: 0%;
+    top: -5%;
     left: 50%;
     width: 6px;
     height: 8px;
@@ -764,7 +782,7 @@ i input{
     text-align: center;
   }
   
-  label{
+  label span{
     font-size: 13px;
     line-height: 21px;
     color: #666666;
