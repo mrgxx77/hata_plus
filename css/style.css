@@ -720,7 +720,6 @@ input{
 label input{
     font-size: 13px;
     line-height: 21px;
-    margin-bottom: 10px;
   }
   .tt input {
     padding: 15px;
@@ -730,18 +729,18 @@ label input{
     width: 100%;    
     padding: 10px 15px;
     padding-right: 55px;
-  }
+    margin-bottom: 10px;
+}
   .text input{
     font-size: 13px;
     line-height: 21px;
-    margin-bottom: 10px;
   }
   
   textarea{
     width: 100%;    
-    max-height: 75px;
-    padding: 15px;
     min-height: 105px;
+    max-height: 155px;
+    padding: 15px;
     border: 1px solid #c5c5d4;
     font-size: 13px;
     line-height: 21px;
@@ -749,6 +748,7 @@ label input{
     margin-bottom: 10px;
     resize: vertical;
     box-sizing: border-box;
+    border-radius: 3px;
   }
   
   input[type=checkbox]{
@@ -767,7 +767,7 @@ label input{
   }
   
   input:checked + span{
-    top: -5%;
+    top: 3px;
     left: 50%;
     width: 8px;
     height: 5px;
@@ -787,6 +787,7 @@ label input{
     color: #ffffff;
     font-weight: bold;
     text-align: center;
+    margin-right: 30px;
   }
   
   label span{
