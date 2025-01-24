@@ -728,7 +728,8 @@ label input{
   input[type=text],
   input[type=tel]{
     width: 100%;    
-    padding: 0px 15px;
+    padding: 10px 15px;
+    padding-right: 55px;
   }
   .text input{
     font-size: 13px;
@@ -772,9 +773,7 @@ label input{
     height: 5px;
     border-top: 2px solid #000;
     border-left: 2px solid #000;
-    transform: rotate(-135deg);
-    /* transition: ; */
-
+    transform: translate(-50%, -50%) rotate(-135deg);
   }
   
   input[type=submit]{
