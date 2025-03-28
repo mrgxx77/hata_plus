@@ -185,29 +185,31 @@
             <hr>
         </span>
         
-        <div class="mff flex-between">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1k1t9ROHVboImdUM75-BoyislqPootxo&ehbc=2E312F"></iframe>
-            </div>
-            <div class="feedback-form">
-                <h2>Форма зворотнього зв’язку</h2>
-                <div class="tt flex-between">
-                    <label><p><input type="text" placeholder="Ваше ім’я"></p></label>
-                    <label><p><input type="tel" placeholder="Телефон"></p></label>
+        <form action="index.php" method="post">
+            <div class="mff flex-between">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1k1t9ROHVboImdUM75-BoyislqPootxo&ehbc=2E312F"></iframe>
                 </div>
-                <label><p class="text"><input type="text" placeholder="Тема повідомлення"></p></label>
-                <p><textarea name="" id="" cols="30" rows="10" placeholder="Текст"></textarea></p>
-                <label><input type="submit" placeholder="Відправити"></label>
-                <label>
-                  <span class="check">
-                    <input type="checkbox">
-                    <span></span>
-                </span>
-                <span>Я бажаю отримувати останні новини</span>
-                 </label>
-              </div>
+                <div class="feedback-form">
+                    <h2>Форма зворотнього зв’язку</h2>
+                    <div class="tt flex-between">
+                        <label><p><input type="text" placeholder="Ваше ім’я" name="user-name"></p></label>
+                        <label><p><input type="tel" placeholder="Телефон" name="phone-number"></p></label>
+                    </div>
+                    <label><p class="text"><input type="text" placeholder="Тема повідомлення" name="message-subject"></p></label>
+                    <p><textarea name="" id="" cols="30" rows="10" placeholder="Текст" name="text"></textarea></p>
+                    <label><input type="submit" value="Відправити"></label>
+                    <label>
+                      <span class="check">
+                        <input type="checkbox" name="wish" value="1">
+                        <span></span>
+                        </span>
+                        <span>Я бажаю отримувати останні новини</span>
+                    </label>
+                  </div>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
 
