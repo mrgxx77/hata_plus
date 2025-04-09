@@ -33,6 +33,9 @@ body{
     background-color: #fff;
     font-family: "Arial";
 }
+html{
+    font-size: 1px;
+}
 img{
     width: 100%;
 }
@@ -44,18 +47,18 @@ a{
 }
 hr{
     border: 0;
-    border-top: 1px;
-    width: 713px;
-    height: 1px;
+    border-top: 1rem;
+    width: 713rem;
+    height: 1rem;
     background-color: #e4e4ec;
 }
 .header{
-    filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 0 5rem rgba(0,0,0,0.1));
     background-color: #ffffff;
 }
 .wrapper{
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 960rem;
 }
 .flex-between{
     display: flex;
@@ -70,12 +73,12 @@ hr{
     z-index: 1;
 }
 .up-menu li{
-    padding: 15px 0px;
+    padding: 15rem 0rem;
 }
 .up-menu a{
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 14rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
     color: #b1b1d2;
     align-items: center;
 }
@@ -91,7 +94,7 @@ hr{
     transition: all 0.5s ease;
 }
 .up-menu ul{
-    column-gap: 22px;
+    column-gap: 22rem;
 }
 .phone,
 .mail,
@@ -103,32 +106,32 @@ hr{
 .skype svg {
     position: absolute;
     /* top: 32px; */
-    left: -30px;
+    left: -30rem;
 }
 .phone::before,
 .mail::before,
 .skype::before{
     content: "";
     position: absolute;
-    top: 32px;
-    left: -320px;
+    top: 32rem;
+    left: -320rem;
 }
 .header{
     background-color: #fff;
-    padding-top: 55px;
+    padding-top: 55rem;
     align-items: center;
 }
 .header-contacts{
-    padding: 30px 0px;
+    padding: 30rem 0rem;
     align-items: center;
 }
 .logo img{
     width: 100%;
 }
 .phone-number a{
-    padding-right: 30px;
-    font-size: 18px;
-    line-height: 24px;
+    padding-right: 30rem;
+    font-size: 18rem;
+    line-height: 24rem;
     color: #25252c;
     font-weight: bold;
 }
@@ -142,17 +145,17 @@ hr{
 .phone-number span::after{
     content: "";
     position: absolute;
-    width: 1px;
-    height: 51px;
+    width: 1rem;
+    height: 51rem;
     background-color: #e4e4ec;
 }
 .mail a{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     color: #25252c;
     display: flex;
     align-items: center;
-    column-gap: 12px;
+    column-gap: 12rem;
 }
 .mail span{
     text-decoration: underline;
@@ -174,13 +177,13 @@ hr{
 }
 .order a{
     color: #1f1f56;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     font-weight: bold;
     background-color: #ffffff;
-    border-radius: 25px;
-    border: 2px solid #fd8300;
-    padding: 15px 30px;
+    border-radius: 25rem;
+    border: 2rem solid #fd8300;
+    padding: 15rem 30rem;
     justify-content: center;
     align-items: center;
 }
@@ -189,8 +192,8 @@ hr{
     transition: all 0.5s ease;
 }
 .img{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 40rem;
+    padding-bottom: 40rem;
     background-image: url(../img/Rectangle\ 9.png);
     text-align: center;
 }
@@ -198,52 +201,52 @@ hr{
     width: 100%;
 }
 .img h2{
-    font-size: 30px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 30rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 .img span{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #ffffff;
     text-align: center;
 }
 .img p{
-    padding-top: 12px;
-    font-size: 24px;
-    line-height: 24px;
+    padding-top: 12rem;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #fd8300;
     font-weight: bold;
 }
 .img b{
-    font-size: 40px;
-    line-height: 24px;
+    font-size: 40rem;
+    line-height: 24rem;
     color: #fd8300;
     font-weight: bold;
 }
 .about-company h1{
-    padding: 28px 0px;
-    font-size: 30px;
-    line-height: 24px;
+    padding: 28rem 0rem;
+    font-size: 30rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 .about-company p{
-    max-width: 677px;
-    max-height: 193px;
-    font-size: 14px;
-    line-height: 24px;
+    max-width: 677rem;
+    max-height: 193rem;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
-    padding-bottom: 25px;
+    padding-bottom: 25rem;
 }
 .about-company a{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     font-weight: bold;
     color: #fd8300;
 }
@@ -251,59 +254,60 @@ hr{
     text-decoration: underline;
 }
 .center-left{
-    padding-bottom: 46px;
+    padding-bottom: 46rem;
 }
 .projects h2{
-    padding-top: 30px;
-    padding-bottom: 24px;
-    font-size: 24px;
-    line-height: 24px;
+    padding-top: 30rem;
+    padding-bottom: 24rem;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 .figcaption h3{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #1f1f56;
     font-weight: bold;
-    column-gap: 10px;
+    column-gap: 10rem;
 }
 .figcaption h3:hover{
     text-decoration: underline;
     transition: all 0.5s ease;
 }
 .figcaption p{
-    max-height: 53px;
-    font-size: 13px;
-    line-height: 18px;
+    max-height: 53rem;
+    font-size: 13rem;
+    line-height: 18rem;
     color: #9999a6;
-    column-gap: 10px;
+    column-gap: 10rem;
 } 
 aside {
-    padding-top: 36px;
+    padding-top: 36rem;
 }
 .aside-menu{
     position: sticky;
-    top: 60px;
+    top: 60rem;
 }
 .menu li:last-child{
-    border-radius: 0px 0px 3px 3px;
+    border-radius: 0rem 0rem 3rem 3rem;
     overflow: hidden;
 }
 .menu{
-    min-width: 220px;
+    min-width: 220rem;
 }
 .menu h3{
-    padding: 17px;
-    border-radius: 3px 3px 0px 0px;
+    font-size: 17px;
+    padding: 17rem;
+    border-radius: 3rem 3rem 0rem 0rem;
     background-color: #1f1f56;
     color:#fff;
   }
   .submenu{
     display:none;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
   }
   .submenu a{
@@ -329,11 +333,11 @@ aside {
     content: "";
     position: absolute;
     top: 50%;
-    right: 16px;
-    width: 7px;
-    height: 7px;
-    border-top: 2px solid #666666;
-    border-left: 2px solid #666666;
+    right: 16rem;
+    width: 7rem;
+    height: 7rem;
+    border-top: 2rem solid #666666;
+    border-left: 2rem solid #666666;
     transform: translateY(-50%) rotate(135deg);
     transition: all is ease;
   }
@@ -345,10 +349,10 @@ aside {
   }
   .menu a{
     display: block;
-    padding: 17px;
-    box-shadow: inset 0px -1px 0px #cecedd;
-    font-size: 14px;
-    line-height: 24px;
+    padding: 17rem;
+    box-shadow: inset 0rem -1rem 0rem #cecedd;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #25252c;
     background-color: #e4e4ec;
   }
@@ -358,25 +362,25 @@ aside {
     background-color: #ededf5;
   }
   .down-menu{
-    padding-top: 40px;
+    padding-top: 40rem;
     align-items: start;
     justify-content: space-between;
     align-items: flex-start;
   }
   .down-left{
-    column-gap: 145px;
+    column-gap: 145rem;
   }
   .down-right{
-    column-gap: 90px;
+    column-gap: 90rem;
     align-items: flex-start;
   }
 .left{
-    padding-bottom: 30px;
+    padding-bottom: 30em;
 }
   .left p,
   .right p{
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 14rem;
+    line-height: 26rem;
     color: #666666;
   }
   .left ul p:hover,
@@ -388,11 +392,11 @@ aside {
     background-color: #dcdce6;
   }
   .company p{
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 13rem;
+    line-height: 18rem;
     color: #9999a6;
     text-align: center;
-    padding: 15px 0px 18px;
+    padding: 15rem 0rem 18rem;
   }
 
 
