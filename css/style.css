@@ -31,7 +31,12 @@
 }
 body{
     background-color: #fff;
+    /* box-sizing: border-box; */
     font-family: "Arial";
+    /* flex-wrap: wrap; */
+}
+html{
+    font-size: 0.7px;
 }
 img{
     width: 100%;
@@ -44,22 +49,24 @@ a{
 }
 hr{
     border: 0;
-    border-top: 1px;
-    width: 713px;
-    height: 1px;
+    border-top: 1rem;
+    width: 713rem;
+    height: 1rem;
     background-color: #e4e4ec;
 }
 .header{
-    filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 0 5rem rgba(0,0,0,0.1));
     background-color: #ffffff;
 }
 .wrapper{
     margin: 0 auto;
-    max-width: 960px;
+    box-sizing: border-box;
+    max-width: 960rem;
 }
-.flex-between{
+.flex-between {
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .up-menu{
     position: fixed;
@@ -70,12 +77,12 @@ hr{
     z-index: 1;
 }
 .up-menu li{
-    padding: 15px 0px;
+    padding: 15rem 0rem;
 }
 .up-menu a{
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 14rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
     color: #b1b1d2;
     align-items: center;
 }
@@ -91,7 +98,7 @@ hr{
     transition: all 0.5s ease;
 }
 .up-menu ul{
-    column-gap: 22px;
+    column-gap: 22rem;
 }
 .phone,
 .mail,
@@ -102,33 +109,33 @@ hr{
 .mail svg,
 .skype svg {
     position: absolute;
-    /* top: 32px; */
-    left: -30px;
+    /* top: 32rem; */
+    left: -30rem;
 }
 .phone::before,
 .mail::before,
 .skype::before{
     content: "";
     position: absolute;
-    top: 32px;
-    left: -320px;
+    top: 32rem;
+    left: -320rem;
 }
 .header{
     background-color: #fff;
-    padding-top: 55px;
+    padding-top: 55rem;
     align-items: center;
 }
 .header-contacts{
-    padding: 30px 0px;
+    padding: 30rem 0rem;
     align-items: center;
 }
 .logo img{
     width: 100%;
 }
 .phone-number a{
-    padding-right: 30px;
-    font-size: 18px;
-    line-height: 24px;
+    padding-right: 30rem;
+    font-size: 18rem;
+    line-height: 24rem;
     color: #25252c;
     font-weight: bold;
 }
@@ -142,17 +149,17 @@ hr{
 .phone-number span::after{
     content: "";
     position: absolute;
-    width: 1px;
-    height: 51px;
+    width: 1rem;
+    height: 51rem;
     background-color: #e4e4ec;
 }
 .mail a{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     color: #25252c;
     display: flex;
     align-items: center;
-    column-gap: 12px;
+    column-gap: 12rem;
 }
 .mail span{
     text-decoration: underline;
@@ -174,13 +181,13 @@ hr{
 }
 .order a{
     color: #1f1f56;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     font-weight: bold;
     background-color: #ffffff;
-    border-radius: 25px;
-    border: 2px solid #fd8300;
-    padding: 15px 30px;
+    border-radius: 25rem;
+    border: 2rem solid #fd8300;
+    padding: 15rem 30rem;
     justify-content: center;
     align-items: center;
 }
@@ -189,8 +196,8 @@ hr{
     transition: all 0.5s ease;
 }
 .img{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 40rem;
+    padding-bottom: 40rem;
     background-image: url(../img/Rectangle\ 9.png);
     text-align: center;
 }
@@ -198,52 +205,53 @@ hr{
     width: 100%;
 }
 .img h2{
-    font-size: 30px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 30rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 .img span{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #ffffff;
     text-align: center;
 }
 .img p{
-    padding-top: 12px;
-    font-size: 24px;
-    line-height: 24px;
+    padding-top: 12rem;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #fd8300;
     font-weight: bold;
 }
 .img b{
-    font-size: 40px;
-    line-height: 24px;
+    font-size: 40rem;
+    line-height: 24rem;
     color: #fd8300;
     font-weight: bold;
 }
 .about-company h1{
-    padding: 28px 0px;
-    font-size: 30px;
-    line-height: 24px;
+    padding: 28rem 0rem;
+    font-size: 30rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 .about-company p{
-    max-width: 677px;
-    max-height: 193px;
-    font-size: 14px;
-    line-height: 24px;
+    max-width: 677rem;
+    max-height: 193rem;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
-    padding-bottom: 25px;
+    padding-bottom: 25rem;
+    width: 100%;
 }
 .about-company a{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     font-weight: bold;
     color: #fd8300;
 }
@@ -251,59 +259,60 @@ hr{
     text-decoration: underline;
 }
 .center-left{
-    padding-bottom: 46px;
+    padding-bottom: 46rem;
 }
 .projects h2{
-    padding-top: 30px;
-    padding-bottom: 24px;
-    font-size: 24px;
-    line-height: 24px;
+    padding-top: 30rem;
+    padding-bottom: 24rem;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 .figcaption h3{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #1f1f56;
     font-weight: bold;
-    column-gap: 10px;
+    column-gap: 10rem;
 }
 .figcaption h3:hover{
     text-decoration: underline;
     transition: all 0.5s ease;
 }
 .figcaption p{
-    max-height: 53px;
-    font-size: 13px;
-    line-height: 18px;
+    max-height: 53rem;
+    font-size: 13rem;
+    line-height: 18rem;
     color: #9999a6;
-    column-gap: 10px;
+    column-gap: 10rem;
 } 
 aside {
-    padding-top: 36px;
+    padding-top: 36rem;
 }
 .aside-menu{
     position: sticky;
-    top: 60px;
+    top: 60rem;
 }
 .menu li:last-child{
-    border-radius: 0px 0px 3px 3px;
+    border-radius: 0rem 0rem 3rem 3rem;
     overflow: hidden;
 }
 .menu{
-    min-width: 220px;
+    min-width: 220rem;
 }
 .menu h3{
-    padding: 17px;
-    border-radius: 3px 3px 0px 0px;
+    font-size: 17rem;
+    padding: 17rem;
+    border-radius: 3rem 3rem 0rem 0rem;
     background-color: #1f1f56;
     color:#fff;
   }
   .submenu{
     display:none;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
   }
   .submenu a{
@@ -329,11 +338,11 @@ aside {
     content: "";
     position: absolute;
     top: 50%;
-    right: 16px;
-    width: 7px;
-    height: 7px;
-    border-top: 2px solid #666666;
-    border-left: 2px solid #666666;
+    right: 16rem;
+    width: 7rem;
+    height: 7rem;
+    border-top: 2rem solid #666666;
+    border-left: 2rem solid #666666;
     transform: translateY(-50%) rotate(135deg);
     transition: all is ease;
   }
@@ -345,10 +354,10 @@ aside {
   }
   .menu a{
     display: block;
-    padding: 17px;
-    box-shadow: inset 0px -1px 0px #cecedd;
-    font-size: 14px;
-    line-height: 24px;
+    padding: 17rem;
+    box-shadow: inset 0rem -1rem 0rem #cecedd;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #25252c;
     background-color: #e4e4ec;
   }
@@ -358,25 +367,25 @@ aside {
     background-color: #ededf5;
   }
   .down-menu{
-    padding-top: 40px;
+    padding-top: 40rem;
     align-items: start;
     justify-content: space-between;
     align-items: flex-start;
   }
   .down-left{
-    column-gap: 145px;
+    column-gap: 145rem;
   }
   .down-right{
-    column-gap: 90px;
+    column-gap: 90rem;
     align-items: flex-start;
   }
 .left{
-    padding-bottom: 30px;
+    padding-bottom: 30em;
 }
   .left p,
   .right p{
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 14rem;
+    line-height: 26rem;
     color: #666666;
   }
   .left ul p:hover,
@@ -388,11 +397,11 @@ aside {
     background-color: #dcdce6;
   }
   .company p{
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 13rem;
+    line-height: 18rem;
     color: #9999a6;
     text-align: center;
-    padding: 15px 0px 18px;
+    padding: 15rem 0rem 18rem;
   }
 
 
@@ -405,46 +414,46 @@ aside {
     color: #fff;
 }
 .houses a{
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 12rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
     color: #25252c;
-    padding-left: 10px;
-    padding-right: 25px;
+    padding-left: 10rem;
+    padding-right: 25rem;
 }
 .houses li{
-    padding: 8px 0px;
-    box-shadow: inset 0px 1px 0px #cecedd;
+    padding: 8rem 0rem;
+    box-shadow: inset 0rem 1rem 0rem #cecedd;
 }
 .sectors li,
 .houses li{
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 3rem 3rem 0rem 0rem;
     position: relative;
 }
 .sectors li:last-child,
 .houses li:last-child{
-    border-radius: 0px 0px 3px 3px;
+    border-radius: 0rem 0rem 3rem 3rem;
 }
 .dog-houses,
 .houses{
     position: absolute;
-    top: calc(100% + 5px);
+    top: calc(100% + 5rem);
     left: 0;
-    min-width: 140px;
-    border-radius: 3px;
+    min-width: 140rem;
+    border-radius: 3rem;
     background-color: #e4e4ec;
 }
 .houses::before{
     content: "";
     position: absolute;
-    border-top: 5px solid transparent;
+    border-top: 5rem solid transparent;
     width: 100%;
-    top: -5px;
+    top: -5rem;
     left: 0;
 }
 .dog-houses{
     top: 0;
-    left: calc(100% + 4px);
+    left: calc(100% + 4rem);
 }
 .houses li:hover{
     background-color: #fd8300;
@@ -462,8 +471,8 @@ aside {
     content: "";
     position: absolute;
     top: 0;
-    left: -4px;
-    border-left: 4px solid transparent;
+    left: -4rem;
+    border-left: 4rem solid transparent;
     height: 100%;
 }
 .houses > li > a{
@@ -473,11 +482,11 @@ aside {
     content: "";
     position: absolute;
     top: 50%;
-    left: 110px;
-    width: 7px;
-    height: 7px;
-    border-top: 2px solid #666666;
-    border-left: 2px solid #666666;
+    left: 110rem;
+    width: 7rem;
+    height: 7rem;
+    border-top: 2rem solid #666666;
+    border-left: 2rem solid #666666;
     transform: translateY(-50%) rotate(135deg);
     transition: all is ease;
   }
@@ -489,60 +498,60 @@ aside {
   } 
 
   .price h1{
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding-bottom: 22px;
-    padding-top: 40px;
+    padding-bottom: 22rem;
+    padding-top: 40rem;
 }
 .price p{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
 }
 .price span p:last-child{
-    padding-bottom: 25px;
+    padding-bottom: 25rem;
 }
 table{
-    margin-bottom: 27px;
+    margin-bottom: 27rem;
     width: 100%;
     border-collapse: collapse;
     background-color: #e4e4ec;
-    border-radius: 3px;
+    border-radius: 3rem;
     overflow: hidden;
 }
 th{
-    padding: 10px;
+    padding: 10rem;
     background-color: #1f1f56;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
   }
 thead tr+tr{
-    border:  1px solid #274569;
+    border:  1rem solid #274569;
   }
 thead th{
-    box-shadow: inset 1px 0px 0px #274569;
+    box-shadow: inset 1rem 0rem 0rem #274569;
 }
 tbody>tr{
-    width: 960px;
-    height: 41px;
+    width: 960rem;
+    height: 41rem;
     background-color: #e4e4ec;
 }  
 tbody>tr+tr{
-    box-shadow: inset 0px 1px 0px #cecedd;
+    box-shadow: inset 0rem 1rem 0rem #cecedd;
 }
   td{
-    padding: 15px;
-    font-size: 14px;
-    line-height: 24px;
+    padding: 15rem;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #666666;
     align-items: center;
-    box-shadow: inset 1px 0px 0px #cecedd;
+    box-shadow: inset 1rem 0rem 0rem #cecedd;
 }   
  td:first-child{
     text-align: left;
@@ -561,17 +570,17 @@ tr:hover > td{
     color: #fff;
 }
 .price{
-    padding-bottom: 33px;
+    padding-bottom: 33rem;
 }
 .price span p:last-child{
-    padding-bottom: 27px;
+    padding-bottom: 27rem;
 }
 .price a{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #fd8300;
     font-weight: bold;
-    margin-bottom: 33px;
+    margin-bottom: 33rem;
 }
 .price a:hover{
     text-decoration: underline;
@@ -579,19 +588,19 @@ tr:hover > td{
 }
 span > hr {
     border: 0;
-    border-top: 1px;
-    width: 960px;
-    height: 1px;
+    border-top: 1rem;
+    width: 960rem;
+    height: 1rem;
     background-color: #e4e4ec;
 }
 .projects-two{
-    min-width: 960px;
+    min-width: 960rem;
 }
 .projects-two h2{
-    padding-top: 30px;
-    padding-bottom: 24px;
-    font-size: 24px;
-    line-height: 24px;
+    padding-top: 30rem;
+    padding-bottom: 24rem;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -624,138 +633,138 @@ figcaption{
 
 .ocd{
     justify-content: start;
-    column-gap: 88px;
+    column-gap: 88rem;
 }
 .contacts-ocd{
-    padding-bottom: 33px;
+    padding-bottom: 33rem;
 }
 .contacts-ocd h1{
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding-top: 40px;
-    padding-bottom: 27px;
+    padding-top: 40rem;
+    padding-bottom: 27rem;
 }
 .contacts-ocd h3{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding-bottom: 12px;
+    padding-bottom: 12rem;
 }
 .contacts-ocd p{
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 14rem;
+    line-height: 21rem;
     color: #666666;
-    padding-bottom: 7px;
+    padding-bottom: 7rem;
 }
 .mail-two{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     text-decoration: underline;
     color: #25252c;
 }
 .Consultation{
-    margin-right: 74px;
+    margin-right: 74rem;
 }
 
 .phone {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 18rem;
+    line-height: 24rem;
     color: #25252c;
     font-weight: bold;
 }
 .map{
     overflow: hidden;
     position: relative;
-    min-width: 466px;
-    min-height: 400px;
+    min-width: 466rem;
+    min-height: 400rem;
 }
 iframe{
     height: 100%;
     position: absolute;
-    top: -71px;
+    top: -71rem;
     width: 100%;
     border: none;
 }
 .contacts span>a {
     color: #25252c;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     text-decoration: underline;
 }
 
 .contacts{
-    padding-bottom: 25px;
+    padding-bottom: 25rem;
 }
 .mff{
-    padding-top: 35px;
-    padding-bottom: 40px;
+    padding-top: 35rem;
+    padding-bottom: 40rem;
     width: 100%;
 }
 
 .mff h2{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding-bottom: 10px;
+    padding-bottom: 10rem;
 }
 .feedback-form{
     width: 50% ;    
 }
 input{ 
-    border: 1px solid #c5c5d4;
+    border: 1rem solid #c5c5d4;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 3rem;
 }
 ::placeholder{
     color: #9999a6;
     font-style: italic;
 }
 label input{
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 13rem;
+    line-height: 21rem;
   }
   .tt input {
-    padding: 15px;
+    padding: 15rem;
   }
   input[type=text],
   input[type=tel]{
     width: 100%;    
-    padding: 10px 15px;
-    padding-right: 55px;
-    margin-bottom: 10px;
+    padding: 10rem 15rem;
+    padding-right: 55rem;
+    margin-bottom: 10rem;
 }
   .text input{
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 13rem;
+    line-height: 21rem;
   }
   
   textarea{
     width: 100%;    
-    min-height: 105px;
-    max-height: 155px;
-    padding: 15px;
-    border: 1px solid #c5c5d4;
-    font-size: 13px;
-    line-height: 21px;
+    min-height: 105rem;
+    max-height: 155rem;
+    padding: 15rem;
+    border: 1rem solid #c5c5d4;
+    font-size: 13rem;
+    line-height: 21rem;
     font-family: "Arial";
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
     resize: vertical;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 3rem;
   }
   
   input[type=checkbox]{
     appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 3px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 3rem;
   }
   
   .check{
@@ -767,32 +776,32 @@ label input{
   }
   
   input:checked + span{
-    top: 3px;
+    top: 3rem;
     left: 45%;
-    width: 5px;
-    height: 8px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
+    width: 5rem;
+    height: 8rem;
+    border-top: 2rem solid #000;
+    border-left: 2rem solid #000;
     transform: translate(-50%, -50%) rotate(-135deg);
   }
   
   input[type=submit]{
-    width: 140px;
-    height: 41px;
+    width: 140rem;
+    height: 41rem;
     border: none;
-    border-radius: 21px;
+    border-radius: 21rem;
     background-color: #fd8300;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #ffffff;
     font-weight: bold;
     text-align: center;
-    margin-right: 30px;
+    margin-right: 30rem;
   }
   
   label span{
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 13rem;
+    line-height: 21rem;
     color: #666666;
     font-family: "Arial";
   }
@@ -800,5 +809,52 @@ label input{
   
   
   
-  
+  @media screen and (min-width: 487px){
+    .flex-between{
+        justify-content: space-between;
+    }
+}
+/* @media screen and (max-width: 486rem){
+    .up-menu{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between; 
+    }
+} */
+@media screen and (min-width: 877px){
+    html {
+        font-size: 1px;
+    }
+}
+@media screen and (max-width: 876px){
+    .header-contacts,
+    .up-menu{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 610px){
+    .mail{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 876px){
+    .header-contacts{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 932px){
+    aside{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1040px){
+    html {
+        font-size: 1.2px;
+    }
+}
+@media screen and (min-width: 2040px){
+    html {
+        font-size: 2px;
+    }
+}
   
