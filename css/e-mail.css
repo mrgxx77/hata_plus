@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    font-family: "Arial";
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+
+.table{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.logo{
+    padding-right: 85px;
+}
+.header b{
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    justify-content: right;
+}
+.header i{
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    text-align: right;
+}
+.img{
+    padding: 40px 30px;
+    background: url(../img/Rectangle\ 9.png);
+    text-align: center;
+}
+.img img{
+    width: 100%;
+}
+.img h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.img span{
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+.img p{
+    padding-top: 12px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+.img b{
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+.company h2{
+    padding: 28px 0px;
+    font-size: 30px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.company p{
+    max-width: 677px;
+    max-height: 193px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+.company td:has(p){
+    padding-bottom: 25px;
+}
+.company td:has(a){
+    padding-bottom: 40px;
+}
+.company a{
+    width: 180px;
+    height: 40px;
+    /* border: none;
+    border-radius: 21px; */
+    background-color: #fd8300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.amenities{
+    width: 625px;
+    height: 195px;
+    background-color: #ededf5;
+}
+.amenities b{
+    font-size: 14px;
+    line-height: 18px;
+    color: #24242b;
+    font-weight: bold;
+    text-align: center;
+}
+.amenities p{
+    /* width: 166px;
+    height: 58px; */
+    font-size: 13px;
+    line-height: 18px;
+    color: #666666;
+    text-align: center;
+}
+.amenities img{
+    padding-left: 60px;
+}
+.amenities td{
+    padding-left: 10px;
+}
+.houses b{
+    font-size: 16px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+}
+.houses p{
+    font-size: 13px;
+    line-height: 19px;
+    color: #9999a6;
+}
