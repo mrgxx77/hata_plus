@@ -50,7 +50,6 @@ a{
 hr{
     border: 0;
     border-top: 1rem;
-    width: 713rem;
     height: 1rem;
     background-color: #e4e4ec;
 }
@@ -68,6 +67,95 @@ hr{
     display: flex;
     justify-content: center;
 }
+
+.up-menu ul, 
+.up-menu p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .dark-bgc {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+  }
+  .flex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .burger {
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    padding-top: 10px;  
+  }
+  .bord {
+    display: block;
+    margin: 4px;
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: all 1s ease;
+  }
+  .b1 {
+    width: 30px;
+  }
+  .b2 {
+    width: 30px;
+  }
+  .b3 {
+    width: 30px;
+    top: 10px;
+  }
+  .menu_two {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    background-color: #1f1f56;
+    border: #000;
+    transition: all .5s ease;
+  }
+  .cancel {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    cursor: pointer;
+  }
+  .top-line {
+    padding: 15px 10px;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
+  @media screen and (min-width: 868px) {
+    .burger {
+      display: none;
+    }
+    .menu_two {
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 10px;
+    }
+    .menu_two li {
+      padding: 15px 10px;
+    }
+    .cancel {
+      display: none;
+    }
+  }
+
 .up-menu{
     position: fixed;
     width: 100%;
