@@ -232,6 +232,9 @@ hr{
     color: #fd8300;
     font-weight: bold;
 }
+.about-company{
+    width: 100%;
+}
 .about-company h1{
     padding: 28rem 0rem;
     font-size: 30rem;
@@ -288,6 +291,9 @@ hr{
     color: #9999a6;
     column-gap: 10rem;
 } 
+.figcaption picture{
+    max-width: 220rem;
+}
 aside {
     padding-top: 36rem;
 }
@@ -809,27 +815,17 @@ label input{
   
   
   
-  @media screen and (min-width: 487px){
+@media screen and (min-width: 487px){
     .flex-between{
         justify-content: space-between;
     }
 }
-/* @media screen and (max-width: 486rem){
-    .up-menu{
+@media screen and (min-width: 720px){
+    .card{
         flex-wrap: wrap;
         display: flex;
-        justify-content: space-between; 
-    }
-} */
-@media screen and (min-width: 877px){
-    html {
-        font-size: 1px;
-    }
-}
-@media screen and (max-width: 876px){
-    .header-contacts,
-    .up-menu{
-        justify-content: space-between;
+        column-gap: 20px;
+        padding-left: 0;
     }
 }
 @media screen and (max-width: 610px){
@@ -837,14 +833,52 @@ label input{
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 876px){
-    .header-contacts{
-        justify-content: space-between;
+@media screen and (max-width: 725px){
+    .mail{
+        padding-top: 10rem;
+        padding-right: 40rem;
+    }
+    .about-company{
+        padding-left: 20rem;
+    }
+    .projects{
+        padding-left: 20rem;
     }
 }
-@media screen and (max-width: 932px){
+@media screen and (max-width: 750px){ 
+    main{
+        padding-right: 20rem;
+        padding-left: 20rem;
+    }
+}
+@media screen and (max-width: 839px){ 
+    .order{
+        padding-top: 20rem;
+    }
+    .logo,
+    .phone-number{
+        padding-right: 50rem;
+    }
+}
+@media screen and (max-width: 876px){
+    html {
+        font-size: 1px;
+    }
+    .wrapper{
+        justify-content: center;
+    } 
+}
+@media screen and (max-width: 1040px){
     aside{
         width: 100%;
+        padding-bottom: 25rem;
+        padding-top: 0rem;
+    }
+    main{
+        flex-wrap: wrap-reverse;    
+    }
+    .header-contacts{
+        column-gap: 20rem;
     }
 }
 @media screen and (min-width: 1040px){
