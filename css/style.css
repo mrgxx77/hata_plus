@@ -232,6 +232,9 @@ hr{
     color: #fd8300;
     font-weight: bold;
 }
+.about-company{
+    width: 100%;
+}
 .about-company h1{
     padding: 28rem 0rem;
     font-size: 30rem;
@@ -288,6 +291,9 @@ hr{
     color: #9999a6;
     column-gap: 10rem;
 } 
+.figcaption picture{
+    max-width: 220rem;
+}
 aside {
     padding-top: 36rem;
 }
@@ -809,9 +815,17 @@ label input{
   
   
   
-  @media screen and (min-width: 487px){
+@media screen and (min-width: 487px){
     .flex-between{
         justify-content: space-between;
+    }
+}
+@media screen and (min-width: 720px){
+    .card{
+        flex-wrap: wrap;
+        display: flex;
+        column-gap: 20px;
+        padding-left: 0;
     }
 }
 @media screen and (max-width: 610px){
@@ -836,8 +850,6 @@ label input{
         padding-right: 20rem;
         padding-left: 20rem;
     }
-}
-@media screen and (max-width: 730px){ 
 }
 @media screen and (max-width: 839px){ 
     .order{
