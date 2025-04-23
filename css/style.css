@@ -163,6 +163,7 @@ hr{
     left: 0;
     background-color: #1f1f56;
     z-index: 1;
+    justify-content: space-between;
 }
 .up-menu li{
     padding: 15rem 0rem;
@@ -361,6 +362,9 @@ hr{
     font-weight: 700;
     font-family: "Roboto Slab";
 }
+.figcaption{
+    max-width: 220px;
+}
 .figcaption h3{
     font-size: 14rem;
     line-height: 24rem;
@@ -379,8 +383,9 @@ hr{
     color: #9999a6;
     column-gap: 10rem;
 } 
-.figcaption picture{
+.figcaption img{
     max-width: 220rem;
+    justify-content: center;
 }
 aside {
     padding-top: 36rem;
@@ -463,8 +468,8 @@ aside {
   .down-menu{
     padding-top: 40rem;
     align-items: start;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: flex-start;    
   }
   .down-left{
     column-gap: 145rem;
@@ -680,13 +685,13 @@ tr:hover > td{
     text-decoration: underline;
     transition: all 0.5s ease;
 }
-span > hr {
+/* span > hr {
     border: 0;
     border-top: 1rem;
     width: 960rem;
     height: 1rem;
     background-color: #e4e4ec;
-}
+} */
 .projects-two{
     min-width: 960rem;
 }
@@ -945,6 +950,9 @@ label input{
     .logo,
     .phone-number{
         padding-right: 50rem;
+    }
+    .down-menu{
+        justify-content: space-between;
     }
 }
 @media screen and (max-width: 876px){
