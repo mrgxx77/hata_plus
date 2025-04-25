@@ -362,7 +362,7 @@ hr{
     font-weight: 700;
     font-family: "Roboto Slab";
 }
-.figcaption{
+.figure{
     max-width: 220px;
 }
 .figcaption h3{
@@ -400,6 +400,7 @@ aside {
 }
 .menu{
     min-width: 220rem;
+    padding-left: 15px;
 }
 .menu h3{
     font-size: 17rem;
