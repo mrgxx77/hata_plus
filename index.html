@@ -6,30 +6,13 @@
     <meta name="viewport" content="width=device-width, user-scaleble=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>компанія хата плюс, робить будинки та подвір'я</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        const dark = document.querySelector(".dark-bgc"),
-        burger = document.querySelector(".burger"),
-        menu_two = document.querySelector(".menu_two"),
-        cancel = document.querySelector(".cancel")
-                                    
-        burger.addEventListener("click", function() {
-        menu_two.style.left = "0";
-        dark.style.display = "block"
-        })
-        function cancelBurger() {
-        menu_two.style.left = "-100%";
-        dark.style.display = "none"
-        }
-        cancel.addEventListener("click", cancelBurger)
-        dark.addEventListener("click", cancelBurger)
-    </script>
 </head>
 
 <body>
+    <div class="dark-bgc"></div>
     <header class="header">
         <div class="up-menu">
             <div class="wrapper flex-between">
-                <div class="dark-bgc"></div>
                     <div class="burger">
                         <span class="bord b1"></span>
                         <span class="bord b2"></span>
@@ -383,7 +366,23 @@
         </div>
     </footer>
 
-
+    <script>
+        const dark = document.querySelector(".dark-bgc"),
+        burger = document.querySelector(".burger"),
+        menu_two = document.querySelector(".menu_two"),
+        cancel = document.querySelector(".cancel")
+                                    
+        burger.addEventListener("click", function() {
+        menu_two.style.left = "0";
+        dark.style.display = "block"
+        })
+        function cancelBurger() {
+        menu_two.style.left = "-100%";
+        dark.style.display = "none"
+        }
+        cancel.addEventListener("click", cancelBurger)
+        dark.addEventListener("click", cancelBurger)
+    </script>
 </body>
 
 </html>
