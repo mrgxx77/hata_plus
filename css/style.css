@@ -468,9 +468,8 @@ aside {
   }
   .down-menu{
     padding-top: 40rem;
-    align-items: start;
     justify-content: center;
-    align-items: flex-start;    
+    /* align-items: flex-start;     */
   }
   .down-left{
     column-gap: 145rem;
